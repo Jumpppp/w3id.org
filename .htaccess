@@ -1,7 +1,9 @@
 # w3id.org global rewrites
 
 Options +FollowSymLinks
-RewriteEngine on
+RewriteEngine On
+RewriteRule ^$ https://raw.githubusercontent.com/YOURNAME/university-ontology/main/University.owl [R=302,L]
+
 
 # special directory redirects due to case insensitive file systems issues
 RewriteRule ^AIRO(.*)$ /airo$1
